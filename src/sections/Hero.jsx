@@ -10,6 +10,7 @@ import {
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 
 const skills = [
+  // List of skills
   "React",
   "Next.js",
   "TypeScript",
@@ -148,7 +149,7 @@ export const Hero = () => {
                 </div>
                 {/* Stats Badge */}
                 <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
-                  <div className="text-2xl font-bold text-primary">5+</div>
+                  <div className="text-2xl font-bold text-primary">2+</div>
                   <div className="text-xs text-muted-foreground">
                     Years Exp.
                   </div>
@@ -160,7 +161,7 @@ export const Hero = () => {
 
         {/* Skills Section */}
         <div className="mt-20 animate-fade-in animation-delay-600">
-          <p className="text-sm text-muted-foreground mb-6 text-center">
+          <p className="text-default text-muted-foreground mb-6 text-center">
             Technologies I work with
           </p>
           <div className="relative overflow-hidden">
