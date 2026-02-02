@@ -55,7 +55,8 @@ export const About = () => {
           </div>
           <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
             <p className="text-lg font-medium italic text-foreground">
-              "My mission is to create seamless digital experiences that empower users and drive innovation."
+              "My mission is to create seamless digital experiences that are not just functional, 
+              but truly delightful - products that users love to use and developers love to maintain."
             </p>
           </div>
           </div>
@@ -63,8 +64,17 @@ export const About = () => {
           {/* Right column - highlights */}
           <div className="grid sm:grid-cols-2 gap-6">
             {highlights.map((item, idx) => (
-              <div>
-            )}
+              <div 
+                key={idx} 
+                className="glass p-6 rounded-2xl animate-fade-in animation-delay-300"
+                style={{animationDelay: `${(idx + 1) * 100}ms`}}>
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 hover:bg-primary/20">
+                  <item.icon className="w-6 h-6 text-primary"/>
+                </div>
+                <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
+                <p className="text-sm text-muted-foreground">{item.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
