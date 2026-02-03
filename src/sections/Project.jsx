@@ -24,6 +24,14 @@ const projects = [
     link:"#",
     github:"#",
   },
+  {
+    title: "Users Dashboard",
+    description: "A comprehensive dashboard for managing user data, analytics, and insights in a web application.",
+    image: "/projects/users-dashboard.png",
+    tags: ["Vue.js", "Django", "PostgreSQL"],
+    link:"#",
+    github:"#",
+  },
 ]
 export const Project = () => {
   return (
