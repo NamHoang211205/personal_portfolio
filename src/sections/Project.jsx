@@ -1,38 +1,39 @@
 import { Github } from "lucide-react"
 import { ArrowUpRight } from "lucide-react"
+import { AnimatedBorderButton } from "../components/AnimatedBorderButton"
 
 const projects = [
   {
-    title:"Vietnamese Card Games",
+    title: "Vietnamese Card Games",
     description: "Online platform to play traditional Vietnamese Card Games",
     image: "/projects/vietnamese-card-games.png",
     tags: ["React", "Node.js", "Socket.io", "Express", "MongoDB"],
-    link:"#",
-    github:"#",
+    link: "#",
+    github: "#",
   },
   {
-    title:"Spotify Songs Recommender – Song recommendation engine",
+    title: "Spotify Songs Recommender – Song recommendation engine",
     description: "A song recommendation engine that suggests songs based on user preferences using collaborative filtering and content-based filtering techniques.",
     image: "/projects/spotify-recommender.png",
     tags: ["Python", "Flask", "Pandas", "Scikit-learn"],
-    link:"#",
-    github:"#",
+    link: "#",
+    github: "#",
   },
   {
-    title:"AI-Powered Chinese Learning SaaS Platform",
+    title: "AI-Powered Chinese Learning SaaS Platform",
     description: "A SaaS platform that leverages AI to help users learn Chinese more effectively through personalized lessons and interactive exercises.",
     image: "/projects/ai-chinese-learning.png",
     tags: ["React", "Node.js", "OpenAI API", "MongoDB"],
-    link:"#",
-    github:"#",
+    link: "#",
+    github: "#",
   },
   {
     title: "Users Dashboard",
     description: "A comprehensive dashboard for managing user data, analytics, and insights in a web application.",
     image: "/projects/users-dashboard.png",
     tags: ["Vue.js", "Django", "PostgreSQL"],
-    link:"#",
-    github:"#",
+    link: "#",
+    github: "#",
   },
 ]
 export const Project = () => {
@@ -49,10 +50,10 @@ export const Project = () => {
             <span className="font-serif italic font-normal text-white">
               {" "} strive to
               make an impact.
-              </span>
+            </span>
           </h2>
           <p className="text-muted-foreground animate-fade-in animation-delay-100">
-            A selection of my recent work, from complex web applications to AI-powered platforms. 
+            A selection of my recent work, from complex web applications to AI-powered platforms.
             Each project reflects my commitment to building solutions that are not only functional but also user-centric and innovative.
           </p>
         </div>
@@ -60,11 +61,11 @@ export const Project = () => {
         {/* projects grid */}
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, idx) => (
-            <div 
+            <div
               key={idx}
               className="group glass rounded-2xl overflow-hidden animate-fade-in md:row-span-1"
-              style={{animationDelay: `${(idx + 1) * 100}ms`}}
-              >
+              style={{ animationDelay: `${(idx + 1) * 100}ms` }}
+            >
 
               <div className="relative overflow-hidden aspect-video">
                 <img
@@ -75,7 +76,7 @@ export const Project = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent opacity-60" />
                 {/* Overlay links */}
                 <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <a 
+                  <a
                     href={project.link} className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all">
                     <ArrowUpRight className="w-5 h-5" />
                   </a>
@@ -87,32 +88,41 @@ export const Project = () => {
               {/* content */}
               <div className="p-6 space-y-4">
                 <div className="flex items-start justify-between">
-                  <h3 className="text-xl font-semibold group-hover:text-primary transition-colors"> 
+                  <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
                     {project.title}
                   </h3>
-                    <ArrowUpRight 
-                      className="w-5 h-5 text-muted-foreground 
-                        group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" 
-                    />
+                  <ArrowUpRight
+                    className="w-5 h-5 text-muted-foreground 
+                        group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-all"
+                  />
                 </div>
                 <p className="text-muted-foreground text-sm">
                   {project.description}
-                  </p>
+                </p>
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag, tagIdx) => (
-                  <span 
-                    key={tagIdx} 
-                    className="px-4 py-1.5 rounded-full bg-surface text-xs font-medium border
-                   border-border/50 color-muted-foreground hover:border-primary/50 hover:text-primary transition-all duration-300" 
-                   >
-                    {tag}
-                   </span>
-                ))}</div>
+                    <span
+                      key={tagIdx}
+                      className="px-4 py-1.5 rounded-full bg-surface text-xs font-medium border
+                   border-border/50 color-muted-foreground hover:border-primary/50 hover:text-primary transition-all duration-300"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           ))}
         </div>
+
+        {/* view all CTA */}
+        <div className="text-center mt-12 animate-fade-in animation-delay-500">
+          <AnimatedBorderButton>
+            View All Projects
+            <ArrowUpRight className="w-5 h-5" />
+          </AnimatedBorderButton>
+        </div>
       </div>
-      </section>
+    </section>
   )
 }
