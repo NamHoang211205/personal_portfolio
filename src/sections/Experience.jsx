@@ -1,31 +1,43 @@
 const experiences = [
   // put latest experience first (need to re-arrange the order)
   {
-    period: "June 2024 - Aug 2024",
-    role: "Frontend Engineer Intern",
-    company: "Luca Studio",
-    description: "Worked on developing scalable web applications using React and Node.js.",
-    technologies: ["React", "Node.js", "JavaScript", "HTML", "CSS"],
+    period: "Jan 2026 - Present",
+    role: "Game UI/UX Developer Intern",
+    company: "Agents Of Influence - Alterea.Inc",
+    description: "Designed user interfaces for web applications using Adobe XD and Figma. Conducted user research to gather insights on user experience and behavior. Created prototypes of web pages and applications with HTML, CSS, JavaScript. Collaborated with developers to ensure seamless integration of UI elements.",
+    technologies: ["JavaScript", "HTML", "CSS"],
     current: true,
   },
   {
+    period: "Jan 2026 - Present",
+    role: "ID Card Assistant",
+    company: "Oberlin College",
+    description: "Assisted users with ID card issuance and access issues, following structured procedures to ensure accurate identity verification and campus security. Worked with digital ID systems and user records, maintaining data accuracy, confidentiality, and system reliability. Explained how ID cards function as authentication and access-control tools, helping users understand and use campus systems effectively. Supported daily operations of a campus-wide access system, troubleshooting common issues and escalating technical problems when needed.",
+    current: true,
+  },
+  {
+    period: "June 2025 - Aug 2025",
+    role: "Software Engineering Intern",
     company: "Luca Studio",
-    position: "Software Developer Intern",
-    duration: "June 2025 - Aug 2025",
-    description: "Focused on creating responsive user interfaces with HTML, CSS, and JavaScript."
+    description: "Developed responsive front-end dashboard for subscribers' management with application. Collaborated with back-end team to integrate APIs, validate real-time data, and ensure smooth flow of subscriber information. Translated Figma prototypes into user-friendly interfaces, improving accessibility for non-technical staff.",
+    technologies: ["React", "JavaScript", "HTML", "CSS"],
+    current: true,
   },
   {
-    company: "Lotte Innovate Vietnam",
-    position: "Frontend Developer Intern",
-    duration: "June 2025 - Sept 2025",
-    description: "Assisted in testing and debugging software applications."
+    period: "June 2025 - Aug 2025",
+    role: "Front-End Developer Intern",
+    company: "Lotte Innovate Vietname - Lotte Group",
+    description: "Built and maintained front-end components for Lotte Portal, ensuring a seamless and responsive user experience. Collaborated with design team to adapt Figma mockups intoproduction-ready web pages consistent with Lotte's branding. Worked closely with back-end engineers to integrate APIs, handle data validation, and ensure smooth functionality. Optimized portal performance across devices and browsers by debugging and refining code structure. Contributed to code reviews, version control, and best practices to maintain scalability and consistency.",
+    technologies: ["Vue.js", "Node.js", "JavaScript", "HTML", "CSS"],
+    current: true,
   },
   {
-    company:"Alterea.Inc",
-    position: "UI/UX Web Developer Intern",
-    duration: "Jan 2026 - Present",
-    description: "Worked on various software development projects."
-  }
+    period: "June 2024 - Aug 2024",
+    role: "Software Developer Intern",
+    company: "Luca Studio",
+    description: "Worked in agile development, contributing to flexible software design approaches. Supported the migration of legacy systems to modern platforms for increased eﬃciency and security. Built responsive web designs using HTML, CSS, JavaScript and Vue frameworks leading to an improved user experience across devices. Collaborated with cross-functional teams to optimize software development processes. Partnered with team members to learn best practices in software design. ",
+    technologies: ["Vue.js", "JavaScript", "HTML", "CSS"],
+    current: true,}
 ] 
 
 
