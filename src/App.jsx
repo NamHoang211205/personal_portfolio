@@ -6,6 +6,7 @@ import {Project} from '@/sections/Project'
 import {Contact} from '@/sections/Contact'
 import {Testimonials} from '@/sections/Testimonials'
 import {Experience} from '@/sections/Experience'
+import {Footer} from '@/layout/Footer'
 function App() {
 
   return (
@@ -19,6 +20,7 @@ function App() {
       <Testimonials />
       <Experience />
     </main>
+    <Footer />
    </div>
   )
 }
