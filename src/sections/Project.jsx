@@ -5,23 +5,23 @@ import { AnimatedBorderButton } from "../components/AnimatedBorderButton"
 const projects = [
   {
     title: "Vietnamese Card Games",
-    description: "Online platform to play traditional Vietnamese Card Games",
+    description: "Real-time multiplayer platform for traditional Vietnamese card games. Engineered WebSocket-based game state synchronization with Socket.io, supporting concurrent players with a Node.js/Express backend and MongoDB for persistent sessions.",
     image: "/projects/vietnamese-card-games.png",
     tags: ["React", "Node.js", "Socket.io", "Express", "MongoDB"],
     link: "#",
     github: "#",
   },
   {
-    title: "Spotify Songs Recommender – Song recommendation engine",
-    description: "A song recommendation engine that suggests songs based on user preferences using collaborative filtering and content-based filtering techniques.",
+    title: "Spotify Songs Recommender",
+    description: "Song recommendation engine using collaborative filtering and audio feature analysis. Built with Python, Flask, and Scikit-learn — users get personalized track suggestions based on their listening preferences and song characteristics.",
     image: "/projects/spotify-recommender.png",
     tags: ["Python", "Flask", "Pandas", "Scikit-learn"],
     link: "#",
     github: "#",
   },
   {
-    title: "AI-Powered Chinese Learning SaaS Platform",
-    description: "A SaaS platform that leverages AI to help users learn Chinese more effectively through personalized lessons and interactive exercises.",
+    title: "AI-Powered Chinese Learning SaaS",
+    description: "SaaS language-learning platform using the OpenAI API to generate personalized Mandarin lessons, vocabulary drills, and grammar explanations — adapting content to each learner's progress and weak points.",
     image: "/projects/ai-chinese-learning.png",
     tags: ["React", "Node.js", "OpenAI API", "MongoDB"],
     link: "#",
@@ -29,7 +29,7 @@ const projects = [
   },
   {
     title: "Users Dashboard",
-    description: "A comprehensive dashboard for managing user data, analytics, and insights in a web application.",
+    description: "Full-stack analytics dashboard for managing user data and behavior insights. Features filterable tables, role-based access, and real-time data sync via a Django REST API backed by PostgreSQL.",
     image: "/projects/users-dashboard.png",
     tags: ["Vue.js", "Django", "PostgreSQL"],
     link: "#",

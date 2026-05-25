@@ -10,7 +10,6 @@ import {
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 
 const skills = [
-  // List of skills
   "React",
   "Next.js",
   "TypeScript",
@@ -18,17 +17,7 @@ const skills = [
   "Python",
   "PostgreSQL",
   "MongoDB",
-  "Redis",
   "Docker",
-  "AWS",
-  "Vercel",
-  "Tailwind CSS",
-  "Prisma",
-  "Jest",
-  "Cypress",
-  "Figma",
-  "Git",
-  "GitHub Actions",
 ];
 
 export const Hero = () => {
@@ -46,7 +35,7 @@ export const Hero = () => {
 
       {/* Green Dots */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(30)].map((_, i) => (
+        {[...Array(10)].map((_, i) => (
           <div
             className="absolute w-1.5 h-1.5 rounded-full opacity-60"
             style={{

@@ -1,26 +1,25 @@
-import { Code2, Rocket, Users, Lightbulb } from "lucide-react";
-
+import { Zap, Globe, Bot, Layers } from "lucide-react";
 
 const highlights = [
   {
-    icon: Code2,
-    title: "Clean Code",
-    description: "Write clean, maintainable, and efficient code following best practices."
+    icon: Zap,
+    title: "Real-Time Systems",
+    description: "Built multiplayer WebSocket infrastructure with Socket.io — hands-on distributed state management handling concurrent users from scratch.",
   },
   {
-    icon: Rocket,
-    title: "Fast Performance",
-    description: "Optimized applications for speed and responsiveness."
+    icon: Globe,
+    title: "International Experience",
+    description: "Shipped production features at 3 companies across the US and Vietnam — Luca Studio, Lotte Group, and Alterea Inc.",
   },
   {
-    icon: Users,
-    title: "Collaboration",
-    description: "Working closely with teams to bring ideas to life."
+    icon: Bot,
+    title: "AI & Research",
+    description: "Built a Discord RAG teaching assistant using LangChain and Ollama, grounding LLM responses in course documents for university students.",
   },
   {
-    icon: Lightbulb,
-    title: "Innovative Solutions",
-    description: "Staying with the latest trends to deliver cutting-edge solutions."
+    icon: Layers,
+    title: "Design to Code",
+    description: "Converted Figma designs to pixel-perfect, responsive UIs across multiple internships — bridging design and engineering at production scale.",
   },
 ]
 
