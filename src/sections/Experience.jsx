@@ -8,7 +8,7 @@ const experiences = [
     current: true,
   },
   {
-    period: "Jan 2026 – Present",
+    period: "Jan 2026 – May 2026",
     role: "Game UI/UX Developer Intern",
     company: "Agents of Influence – Alterea Inc.",
     description: "Designed user interfaces for web applications using Adobe XD and Figma. Conducted user research to gather insights on user experience and behavior. Created prototypes of web pages and applications with HTML, CSS, and JavaScript. Collaborated with developers to ensure seamless integration of UI elements.",
