@@ -1,10 +1,26 @@
 const experiences = [
   {
     period: "Jan 2026 – Present",
+    role: "Data Analyst - Data Platform Team",
+    company: "VNDirect - VNDIRECT Securities Joint Stock Company",
+    description: "Built a Discord-native RAG system that delivered real-time, course-aware Q&A through a Discord bot and retrieval pipeline. Designed prompt-driven workflows that grounded LLM responses in uploaded course documents. Developed a dashboard for document upload, preview, ingestion tracking, and knowledge base management.",
+    technologies: ["Python", "Data Warehouse", "SQL", "Tableau", "Power BI", "Machine Learning"],
+    current: true,
+  },
+  {
+    period: "Jan 2026 – Present",
     role: "Research Assistant – Discord-Based RAG Teaching Assistant",
     company: "West Chester University of Pennsylvania",
     description: "Built a Discord-native RAG system that delivered real-time, course-aware Q&A through a Discord bot and retrieval pipeline. Designed prompt-driven workflows that grounded LLM responses in uploaded course documents. Developed a dashboard for document upload, preview, ingestion tracking, and knowledge base management.",
     technologies: ["Python", "React", "TypeScript", "LangChain", "Ollama", "Docker"],
+    current: true,
+  },
+  {
+    period: "Jan 2026 – Present",
+    role: "ID Card Assistant",
+    company: "Oberlin College",
+    description: "Assisted with ID card issuance and access troubleshooting, following structured procedures for accurate identity verification and campus security. Maintained data accuracy and confidentiality across digital ID systems and user records. Supported daily operations of a campus-wide access control system.",
+    technologies: [],
     current: true,
   },
   {
@@ -13,14 +29,6 @@ const experiences = [
     company: "Agents of Influence – Alterea Inc.",
     description: "Designed user interfaces for web applications using Adobe XD and Figma. Conducted user research to gather insights on user experience and behavior. Created prototypes of web pages and applications with HTML, CSS, and JavaScript. Collaborated with developers to ensure seamless integration of UI elements.",
     technologies: ["JavaScript", "HTML", "CSS"],
-    current: true,
-  },
-  {
-    period: "Jun 2025 – Aug 2025",
-    role: "Software Engineering Intern",
-    company: "Luca Studio",
-    description: "Developed a responsive front-end dashboard for subscriber management. Collaborated with the back-end team to integrate APIs, validate real-time data, and ensure smooth subscriber information flow. Translated Figma prototypes into user-friendly interfaces, improving accessibility for non-technical staff.",
-    technologies: ["React", "JavaScript", "HTML", "CSS"],
     current: false,
   },
   {
@@ -38,14 +46,6 @@ const experiences = [
     description: "Worked in agile development cycles, contributing to flexible software design. Supported migration of legacy systems to modern platforms for improved efficiency and security. Built responsive web designs using HTML, CSS, JavaScript, and Vue.js, improving user experience across devices.",
     technologies: ["Vue.js", "JavaScript", "HTML", "CSS"],
     current: false,
-  },
-  {
-    period: "Jan 2026 – Present",
-    role: "ID Card Assistant",
-    company: "Oberlin College",
-    description: "Assisted with ID card issuance and access troubleshooting, following structured procedures for accurate identity verification and campus security. Maintained data accuracy and confidentiality across digital ID systems and user records. Supported daily operations of a campus-wide access control system.",
-    technologies: [],
-    current: true,
   },
   {
     period: "Aug 2023 – May 2027",
