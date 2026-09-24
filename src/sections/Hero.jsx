@@ -10,14 +10,16 @@ import {
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 
 const skills = [
+  "Python",
+  "TypeScript",
   "React",
   "Next.js",
-  "TypeScript",
-  "Node.js",
-  "Python",
-  "PostgreSQL",
-  "MongoDB",
-  "Docker",
+  "SQL",
+  "PySpark",
+  "Microsoft Fabric",
+  "LangChain",
+  "Qualcomm AI Hub",
+  "Tailwind CSS",
 ];
 
 export const Hero = () => {
@@ -59,25 +61,25 @@ export const Hero = () => {
             <div className="animate-fade-in">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                Software Engineer • React Specialist
+                Software Engineer • AI & Data
               </span>
             </div>
 
             {/* Headline */}
             <div className="space-y-4">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
-                Crafting <span className="text-primary glow-text">digital</span>
+                Building <span className="text-primary glow-text">intelligent</span>
                 <br />
-                experiences with
+                systems, from cloud
                 <br />
                 <span className="font-serif italic font-normal text-white">
-                  precision.
+                  to edge.
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                Hi, I'm Nam Hoang — a fullstack software engineer specializing in
-                React, Next.js, and TypeScript. I build scalable, performant web
-                applications that users love.
+                Hi, I'm Nam Hoang — a Computer Science student at Oberlin College
+                who started in front-end and now builds across the stack: data
+                pipelines, RAG systems, and AI models running on-device.
               </p>
             </div>
 

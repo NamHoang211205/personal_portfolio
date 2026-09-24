@@ -4,6 +4,27 @@ import { AnimatedBorderButton } from "../components/AnimatedBorderButton"
 
 const projects = [
   {
+    title: "AI-Powered Tarot Reading Platform",
+    description: "Full-stack Next.js 16 + TypeScript app delivering interactive tarot readings across three spread formats, backed by a 78-card PostgreSQL database. Prompt-grounded Claude API workflows stream real-time interpretations constrained to stored card meanings, with 3D card-flip interactions, an animated SVG zodiac wheel, and Auth.js authentication enforcing per-user data isolation.",
+    tags: ["Next.js", "TypeScript", "PostgreSQL", "Claude API", "Auth.js"],
+    link: "#",
+    github: "#",
+  },
+  {
+    title: "GuardianHelm – Edge AI Fall Detection",
+    description: "Edge-AI fall detection and emergency-assistance system for motorcyclists using a helmet-mounted camera and microphone. A two-branch model fuses audio features (MFCC, spectral centroid, RMS, ZCR) with R3D-18 video embeddings, deployed on-device to a Qualcomm QCS8550 via Qualcomm AI Hub.",
+    tags: ["Python", "PyTorch", "Scikit-learn", "Qualcomm AI Hub", "QNN"],
+    link: "#",
+    github: "#",
+  },
+  {
+    title: "Discord-Based RAG Teaching Assistant",
+    description: "Discord-native RAG system delivering real-time, course-aware Q&A. LangChain + Ollama workflows ground LLM answers in uploaded course documents, with a React + TypeScript dashboard for document upload, preview, ingestion tracking, and knowledge base management.",
+    tags: ["Python", "LangChain", "Ollama", "React", "TypeScript"],
+    link: "#",
+    github: "#",
+  },
+  {
     title: "Vietnamese Card Games",
     description: "Real-time multiplayer platform for traditional Vietnamese card games. Engineered WebSocket-based game state synchronization with Socket.io, supporting concurrent players with a Node.js/Express backend and MongoDB for persistent sessions.",
     image: "/projects/vietnamese-card-games.png",
@@ -13,17 +34,17 @@ const projects = [
   },
   {
     title: "Spotify Songs Recommender",
-    description: "Song recommendation engine using collaborative filtering and audio feature analysis. Built with Python, Flask, and Scikit-learn — users get personalized track suggestions based on their listening preferences and song characteristics.",
+    description: "Song recommendation web app built on the Spotify Web API with personalized recommendations based on user behavior. Led the front-end: a responsive Vue.js + Tailwind UI with real-time search, preference-based filtering, and interactive charts of listening patterns.",
     image: "/projects/spotify-recommender.png",
-    tags: ["Python", "Flask", "Pandas", "Scikit-learn"],
+    tags: ["Vue.js", "Tailwind CSS", "Spotify Web API"],
     link: "#",
     github: "#",
   },
   {
     title: "AI-Powered Chinese Learning SaaS",
-    description: "SaaS language-learning platform using the OpenAI API to generate personalized Mandarin lessons, vocabulary drills, and grammar explanations — adapting content to each learner's progress and weak points.",
+    description: "Chinese learning SaaS platform with a scalable Next.js App Router front-end built on reusable components. Architected for upcoming backend services — user accounts, progress tracking, content management — and an AI tutor with adaptive feedback and personalized lesson recommendations.",
     image: "/projects/ai-chinese-learning.png",
-    tags: ["React", "Node.js", "OpenAI API", "MongoDB"],
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui"],
     link: "#",
     github: "#",
   },
@@ -68,11 +89,19 @@ export const Project = () => {
             >
 
               <div className="relative overflow-hidden aspect-video">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
+                {project.image ? (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center p-8 bg-gradient-to-br from-primary/30 via-surface to-highlight/20 transition-transform duration-700 group-hover:scale-110">
+                    <span className="text-2xl md:text-3xl font-serif italic text-white/80 text-center">
+                      {project.title}
+                    </span>
+                  </div>
+                )}
                 <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent opacity-60" />
                 {/* Overlay links */}
                 <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">

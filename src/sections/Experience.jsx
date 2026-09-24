@@ -1,22 +1,30 @@
 const experiences = [
   {
-    period: "Jan 2026 – Present",
-    role: "Data Analyst - Data Platform Team",
-    company: "VNDirect - VNDIRECT Securities Joint Stock Company",
-    description: "Built a Discord-native RAG system that delivered real-time, course-aware Q&A through a Discord bot and retrieval pipeline. Designed prompt-driven workflows that grounded LLM responses in uploaded course documents. Developed a dashboard for document upload, preview, ingestion tracking, and knowledge base management.",
-    technologies: ["Python", "Data Warehouse", "SQL", "Tableau", "Power BI", "Machine Learning"],
-    current: true,
+    period: "Aug 2026",
+    role: "Team Lead – Edge AI Fall Detection (GuardianHelm)",
+    company: "SoICT Summer School 2026 – Sponsored by Qualcomm",
+    description: "Led a 7-person team building GuardianHelm, an edge-AI fall detection and emergency-assistance system for motorcyclists using a helmet-mounted camera and microphone. Designed a two-branch hybrid model: an audio pipeline (MFCC, spectral centroid, RMS, ZCR → RandomForest) and a video pipeline (R3D-18 pretrained on Kinetics-400 → RandomForest), trained on the EGOFALLS dataset. Deployed on-device to a Qualcomm QCS8550 via Qualcomm AI Hub (QNN runtime, Hexagon NPU) as a systemd service with an HTTP health-check endpoint.",
+    technologies: ["Python", "PyTorch", "Scikit-learn", "Qualcomm AI Hub", "QNN", "Edge AI"],
+    current: false,
   },
   {
-    period: "Jan 2026 – Present",
+    period: "Jun 2026 – Aug 2026",
+    role: "Data Analysis Intern",
+    company: "VNDirect – VNDIRECT Securities Joint Stock Company",
+    description: "Analyzed Vietnamese stock market data across HoSE, HNX, and UPCOM using the Market360 system (250 indicators across 6 analysis profiles) to support the weekly \"La Bàn Đầu Tư\" and daily \"La Bàn Thị Trường\" reports. Built an AI-assisted content generation pipeline on Microsoft Fabric, integrating a Fabric Data Agent via the OpenAI Assistants API to automate financial commentary drafting. Refactored it into a reusable base notebook with token authentication fallback, retry logic, and a generic validation engine.",
+    technologies: ["Python", "PySpark", "Delta Lake", "Microsoft Fabric", "OpenAI API", "SQL"],
+    current: false,
+  },
+  {
+    period: "Jan 2026 – Jul 2026",
     role: "Research Assistant – Discord-Based RAG Teaching Assistant",
     company: "West Chester University of Pennsylvania",
     description: "Built a Discord-native RAG system that delivered real-time, course-aware Q&A through a Discord bot and retrieval pipeline. Designed prompt-driven workflows that grounded LLM responses in uploaded course documents. Developed a dashboard for document upload, preview, ingestion tracking, and knowledge base management.",
     technologies: ["Python", "React", "TypeScript", "LangChain", "Ollama", "Docker"],
-    current: true,
+    current: false,
   },
   {
-    period: "Jan 2026 – Present",
+    period: "Jan 2026 – May 2026",
     role: "ID Card Assistant",
     company: "Oberlin College",
     description: "Assisted with ID card issuance and access troubleshooting, following structured procedures for accurate identity verification and campus security. Maintained data accuracy and confidentiality across digital ID systems and user records. Supported daily operations of a campus-wide access control system.",
@@ -32,7 +40,15 @@ const experiences = [
     current: false,
   },
   {
-    period: "Jun 2025 – Aug 2025",
+    period: "Sep 2025 – Present",
+    role: "Treasurer & Co-President",
+    company: "Oberlin College Vietnamese Student Association",
+    description: "Manage the club's finances as treasurer and share leadership of the organization's direction as co-president. Help coordinate programs including cultural events and social activities for the Oberlin community.",
+    technologies: [],
+    current: true,
+  },
+  {
+    period: "May 2025 – Aug 2025",
     role: "Front-End Developer Intern",
     company: "Lotte Innovate Vietnam – Lotte Group",
     description: "Built and maintained front-end components for Lotte Portal, ensuring a seamless and responsive user experience. Adapted Figma mockups into production-ready pages consistent with Lotte's branding. Worked with back-end engineers to integrate APIs and handle data validation. Optimized portal performance across devices and browsers.",
@@ -91,8 +107,8 @@ export const Experience = () => {
             className="text-muted-foreground
            animate-fade-in animation-delay-200"
           >
-            A timeline of my professional growth, from curious beginner to
-            software development intern collaborating teams and building products at scale.
+            A timeline of my professional growth — from front-end internships to
+            data pipelines, RAG systems, and on-device AI.
           </p>
         </div>
         {/* Timeline */}
